@@ -11,11 +11,11 @@ comprehensive guide on how to use the components with examples.
 Eric Narvaez's Modifications
 <------------------------------>
 My modifications are to demonstrate the following:
-   Bloc pattern usage,
-   Calling an API Service,
-   Separation of Concerns,
-   Unit Testing,
-   Widget Testing,
-   Driver Testing,
+   Bloc pattern usage, (Completed)
+   Calling an API Service, (Completed)
+   Separation of Concerns, (Completed)
+   Unit Testing, (In Progress)
+   Widget Testing, (In Progress)
+   Driver Testing, (In Progress)
 
 
