@@ -6,9 +6,12 @@ import 'package:intl/intl.dart';
 class ExampleScreen extends Screen {
   final ExampleViewModel viewModel;
   final VoidCallback navigateToMakePayment;
+  final VoidCallback navigateToTickerSymbol;
 
-  ExampleScreen(
-      {@required this.viewModel, @required this.navigateToMakePayment})
+  ExampleScreen({
+    @required this.viewModel,
+    @required this.navigateToMakePayment,
+    @required this.navigateToTickerSymbol})
       : assert(() {
           return viewModel != null;
         }());
@@ -18,7 +21,7 @@ class ExampleScreen extends Screen {
     return Scaffold(
       body: Center(
         child: SizedBox(
-          height: 200,
+          height: 400,
           child: Card(
             child: Column(children: <Widget>[
               ListTile(
@@ -34,6 +37,18 @@ class ExampleScreen extends Screen {
                 child: Text('Make Payment'),
                 onPressed: () {
                   navigateToMakePayment();
+                },
+              ),
+              RaisedButton(
+                child: Text('Stock Ticker Lookup'),
+                onPressed: () {
+                  navigateToTickerSymbol();
+                },
+              ),
+              RaisedButton(
+                child: Text('Ticker Peers Lookup'),
+                onPressed: () {
+                  //navigateToPeerLookup();
                 },
               )
             ]),

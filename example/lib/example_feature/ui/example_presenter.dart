@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:clean_framework/clean_framework.dart';
 import 'package:clean_framework_example/example_feature/bloc/example_bloc.dart';
 import 'package:clean_framework_example/payment/ui/payment_feature_widget.dart';
+import 'package:clean_framework_example/ticker_lookup/ui/ticker_lookup_feature_widget.dart';
 import 'package:flutter/material.dart';
 
 import 'example_screen.dart';
@@ -34,6 +35,9 @@ class ExamplePresenter
       navigateToMakePayment: () {
         _navigateToMakePayment(context);
       },
+      navigateToTickerSymbol: () {
+        _navigateToTickerLookup(context);
+      },
     );
   }
 
@@ -44,4 +48,20 @@ class ExamplePresenter
             settings: RouteSettings(name: 'PaymentFeatureWidget'),
             builder: (context) => PaymentFeatureWidget()));
   }
+
+  void _navigateToTickerLookup(BuildContext context) {
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+            settings: RouteSettings(name: 'TickerLookupFeatureWidget'),
+            builder: (context) => TickerLookupFeatureWidget()));
+  }
+
+//  void _navigateToPeerLookup(BuildContext context) {
+//    Navigator.push(
+//        context,
+//        MaterialPageRoute(
+//            settings: RouteSettings(name: 'TickerLookupFeatureWidget'),
+//            builder: (context) => TickerLookupFeatureWidget()));
+//  }
 }
