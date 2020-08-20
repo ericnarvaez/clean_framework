@@ -14,8 +14,8 @@ My modifications are to demonstrate the following:
    Bloc pattern usage, (Completed)
    Calling an API Service, (Completed)
    Separation of Concerns, (Completed)
-   Unit Testing, (In Progress)
-   Widget Testing, (In Progress)
-   Driver Testing, (In Progress)
+   Unit Testing, (Completed)
+   Widget Testing, (Completed)
+   Driver Testing, (N/A)
 
 
